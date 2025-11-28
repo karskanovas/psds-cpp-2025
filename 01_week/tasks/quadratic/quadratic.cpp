@@ -1,6 +1,7 @@
 #include <iostream>
 #include <cmath>
 
+
 void SolveQuadratic(int a, int b, int c) {
     auto print = [](double x) {
         if (std::abs(x) < 1e-9) x = 0; 
