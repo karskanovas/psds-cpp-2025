@@ -1,6 +1,12 @@
 #include <stdexcept>
 
-
-/* return_type */ FindLastElement(/* ptr_type */ begin, /* ptr_type */ end, /* func_type */ predicate) {
-    throw std::runtime_error{"Not implemented"};
+const int* FindLastElement(const int* begin, const int* end, bool (*predicate)(int)) {
+    if (!begin || !end || begin > end) {
+        return end;}
+    const int* result = end;
+    for (const int* ptr = begin; ptr < end; ++ptr) {
+        if (predicate(*ptr)) {
+            result = ptr;}
+    }
+    return result;
 }
