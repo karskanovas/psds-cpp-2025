@@ -2,7 +2,7 @@
 
 
 std::vector<int> Range(int from, int to, int step = 1) {
-    std::vector<int> result;т
+    std::vector<int> result;
     if (step == 0) {
         return result;}
     if ((from < to && step < 0) || (from > to && step > 0)) {
