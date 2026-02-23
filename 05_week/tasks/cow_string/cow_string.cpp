@@ -230,3 +230,7 @@ public:
 };
 
 const size_t CowString::npos = static_cast<size_t>(-1);
+
+class CowString
+{
+};
