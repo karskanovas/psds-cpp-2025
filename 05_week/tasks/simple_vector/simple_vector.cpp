@@ -185,5 +185,6 @@ public:
     {
         return !(*this == other);
     }
+};
 
 
